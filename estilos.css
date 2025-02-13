@@ -1,0 +1,198 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body{
+    background: lightgrey;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    width:100%;
+    margin: 0; /*centra  en la página*/
+} 
+
+#contenedor{
+    display: flex;
+    flex-direction:column;
+    /*align-items: center;*/
+    width: 100%;
+    margin:0 auto;
+}
+
+header {
+    background: navy;
+    height:150px;
+    width:100%;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size:x-large;
+    padding:20px;
+}
+
+
+.item1 {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos */
+    align-items: stretch; /* Hace que todos los elementos tengan la misma altura */
+    width: 100%; /* Ocupa todo el ancho de #contenedor */
+
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;/* Hace que la sección de información personal ocupe solo el espacio necesario */
+    background: lightgoldenrodyellow;
+    padding:50px;
+    width:100%;
+}
+
+.article{
+    font-style: oblique;
+    font-size: 18px;
+    flex-grow:1;
+    padding: 10px;
+}
+
+figure{
+    flex-grow: 1; /* Hace que la imagen se expanda en altura */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: whitesmoke;
+    width:100%;
+}
+
+img {
+    max-width: 300px;
+    height:auto;
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    
+}
+
+.item2{
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos */
+    
+}
+
+#educacion{
+    font-style: oblique;
+    font-size: 16px;
+    flex-grow:1;
+    padding: 30px;
+    padding-left: 40px;
+    background: burlywood;
+    
+}
+
+#experiencia{
+    font-style: oblique;
+    font-size: 16px;
+    flex-grow:1;
+    padding:30px;
+    padding-left: 40px;
+    background: rgb(128, 187, 128);
+}
+
+footer{
+    text-align: center;
+    line-height: 100px;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: rgb(212, 174, 248);
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    header{
+        height:auto;
+    }
+
+    #contenedor{
+        width: 100%;
+    }
+
+    .item1{
+        flex-direction:column-reverse;
+        align-items: center;
+        text-align: center;
+        width:100%;
+    }
+
+    #content {
+        padding: 50px;
+        text-align: left;
+    }
+
+    figure {
+        margin-top: 10px;
+    }
+
+    .item2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width:100%;
+    }
+
+    #educacion{
+        width: 100%;
+        text-align: left;
+    }
+
+    #experiencia {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    header{
+        height:auto;
+    }
+
+    #contenedor{
+        width: 100%;
+    }
+
+    .item1{
+        flex-direction:column-reverse;
+        align-items: center;
+        text-align: center;
+        width:100%;
+    }
+
+    #content {
+        padding: 50px;
+        text-align: left;
+    }
+
+    figure {
+        margin-top: 10px;
+    }
+
+    .item2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width:100%;
+    }
+
+    #educacion{
+        width: 100%;
+        text-align: left;
+    }
+
+    #experiencia {
+        width: 100%;
+        text-align: left;
+    }
+}
