@@ -3,6 +3,8 @@
 
 ¡Hola a todos!
 
+Link de Git Hub pages con mi CV: https://dsaw-2025-i.github.io/my-cv-part-c-frog-carrots-deploy-agudelotomas02/
+
 En esta tarea, vamos a crear nuestra propia hoja de vida (CV) utilizando HTML y CSS. Este ejercicio está dividido en dos partes para que puedan enfocarse primero en la estructura y luego en el diseño.
 
 ## Parte 1: HTML
